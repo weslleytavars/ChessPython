@@ -1,2 +1,5 @@
+from view import App
+
 if __name__ == "__main__":
-    pass
+    app = App()
+    app.mainloop()
