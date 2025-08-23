@@ -1,4 +1,5 @@
 from tkinter import Tk
+from .board import Board
 
 class App(Tk):
     def __init__(self):
@@ -7,6 +8,7 @@ class App(Tk):
         self.geometry("800x600")
         self.resizable(False, False)
 
+        self.board = Board(self)
         self.center_window()
 
     def center_window(self):
